@@ -15,30 +15,47 @@ export default function Home() {
         <li>✅ frankfurt</li>
       </ul>
 
-      <button onClick={() => alert("You clicked me!")}>
-        Click Me
-      </button>
+      <button 
+        onClick={() => alert("You clicked me!")} 
+        style={{
+        padding: "10px 20px",
+        backgroundColor: "#0070f3",
+        color: "#fff",
+        border: "none",
+        borderRadius: "5px",
+        cursor: "pointer",
+        marginTop: "20px"
+         }}
+       >
+       Click Me
+    </button>
 
-      <table  style={{border:"1px solid #000", margin: "40px auto", textAlign: "center" }}>
-        <thead>
-          <tr>
-          <th>City</th>
-          <th>River</th>
-         </tr>
-       </thead>
-       <tbody>
-         <tr>
-           <td>Wiesbaden</td>
-           <td> Rhein</td>
-         </tr>
-         <tr>
-          <td>Frankfurd</td>
-          <td>Main</td>
-        </tr>
-      </tbody>
+
+    <table style={{ margin: "40px auto", textAlign: "center" }}>
+  <thead>
+    <tr>
+      <th style={{ border: "1px solid #000", padding: "10px" }}>City</th>
+      <th style={{ border: "1px solid #000", padding: "10px" }}>River</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style={{ border: "1px solid #000", padding: "10px" }}>Wiesbaden</td>
+      <td style={{ border: "1px solid #000", padding: "10px" }}>Rhein</td>
+    </tr>
+    <tr>
+      <td style={{ border: "1px solid #000", padding: "10px" }}>Frankfurt</td>
+      <td style={{ border: "1px solid #000", padding: "10px" }}>Main</td>
+    </tr>
+  </tbody>
 </table>
 
-      <img src="/OIP (2).jfif" alt="img" />
+
+      <img 
+        src="/OIP (2).jfif" 
+        alt="img" 
+        style={{width:"250px", marginTop:"20px auto"}}
+        />
     </div>
   );
 }
